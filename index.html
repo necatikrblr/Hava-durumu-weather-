@@ -8,97 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 <body>
-    <nav class="navbar bg-opacity-50 navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hava Durumu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Deniz</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Kara</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Şehirler
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">İzmir</a></li>
-                  <li><a class="dropdown-item" href="#">İstanbul</a></li>
-                  <li><a class="dropdown-item" href="#">Ankara</a></li>
-                </ul>
-              </li>
-            </ul>
+  <div class="container-fluid bg-transparent text-center">
+    <p class="fs-1">şehir seçiniz</p>
+    <select name="" id="selec" class="w-25">
+    </select>
+    <div class="row d-flex justify-content-evenly mt-4">
+      <div class="col-2">
+        <div class="card w-100 shadow-lg" id="izmirCard">
+          <img src="./img/izmir.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center fs-3" id="sehirisim"></h5>
           </div>
-        </div>
-      </nav>
-      <div class="row d-flex justify-content-evenly mt-4">
-        <div class="col-2">
-            <div class="card w-100">
-                <img src="./img/izmir.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title text-center fs-3">İzmir</h5>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Sıcaklık : <span></span></li>
-                  <li class="list-group-item">Hissedilen sıcaklık : <span></span></li>
-                  <li class="list-group-item">Nem : <span></span></li>
-                </ul>
-              </div>
-        </div>
-        <div class="col-2">
-            <div class="card w-100">
-                <img src="./img/istanbul.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">İzmir</h5>
-                  <p class="card-text"></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-              </div>
-        </div>
-        <div class="col-2">
-            <div class="card w-100">
-                <img src="./img/ankara.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">İzmir</h5>
-                  <p class="card-text"></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-              </div>
-        </div>
-        <div class="col-2">
-            <div class="card w-100">
-                <img src="./img/bursa.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">İzmir</h5>
-                  <p class="card-text"></p>
-                </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
-                  <li class="list-group-item">A third item</li>
-                </ul>
-              </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Sıcaklık : <p id="sıcaklık"></p></li>
+            <li class="list-group-item">Hissedilen sıcaklık : <p id="hissedilen"></p></li>
+            <li class="list-group-item">Nem : <p id="nem"></p></li>
+          </ul>
         </div>
       </div>
-
+    </div>
+  </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
