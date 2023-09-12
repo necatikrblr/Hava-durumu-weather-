@@ -3,6 +3,7 @@ let sehirler = [
   ];
   
   let selec = document.getElementById("selec");
+  let kup = document.querySelector(".kup");
   
   sehirler.forEach(e => {
     let op = document.createElement("option");
@@ -14,6 +15,8 @@ let sehirler = [
     let sehir = selec.value;
     const key = "eaacb4541c9790dd70da56c141c86e54";
     const api = `https://api.openweathermap.org/data/2.5/weather?q=${sehir}&appid=${key}&lang=tr&units=metric`;
+    kup.classList.remove("inactive");
+    kup.classList.add("active");
   
     fetch(api)
       .then(res => {
@@ -29,10 +32,11 @@ let sehirler = [
         sicaklik.innerText = resJson.main.temp
         hissedilen.innerText = resJson.main.feels_like
         nem.innerText = resJson.main.humidity
+
       })
       .catch(error => {
         console.error("Hata:", error);
       });
-
+      
   });
   
