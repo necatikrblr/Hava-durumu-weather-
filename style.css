@@ -8,6 +8,11 @@ body{
     background: linear-gradient(to right, rgba(183,222,237,1) 0%, rgba(104,185,209,1) 15%, rgba(99,176,181,1) 53%, rgba(104,185,209,1) 81%, rgba(183,222,237,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=1 );
 }
+.fsheader{
+    font-size: 60px;
+    color:white;
+    text-shadow: 5px;
+}
 .inactive{
     opacity: 0;
 }
