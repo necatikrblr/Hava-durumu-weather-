@@ -39,16 +39,16 @@ let sehirler = [
 
         if (resJson.weather[0].description == "açık") {
           img.src = "./img/acık.jpg"
-          imgg.src = "./img/acık.jpg"
+          imgg.src = "./img/acık.gif"
         }
         else if (resJson.weather[0].description == "az bulutlu" || resJson.weather[0].description == "bulutlu" || resJson.weather[0].description == "kapalı" || resJson.weather[0].description == "parçalı bulutlu" || resJson.weather[0].description == "parçalı az bulutlu") {
           img.src = "./img/bulutlu.jpg"
-          imgg.src = "./img/bulutlu.jpg"
+          imgg.src = "./img/bulutlu.gif"
 
         }
         else if (resJson.weather[0].description == "yağmurlu" || resJson.weather[0].description == "hafif yağmur" || resJson.weather[0].description == "kısa süreli hafif yoğunluklu yağmur") {
           img.src = "./img/yagmurlu.jpg"
-          imgg.src = "./img/yagmurlu.jpg"
+          imgg.src = "./img/yagmur.gif"
         }
         else{
           console.log("resim bulunamadı");
