@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background: rgba(183,222,237,1);
     background: -moz-linear-gradient(left, rgba(183,222,237,1) 0%, rgba(104,185,209,1) 15%, rgba(99,176,181,1) 53%, rgba(104,185,209,1) 81%, rgba(183,222,237,1) 100%);
@@ -25,4 +30,19 @@ body{
 #sıcaklık, #hissedilen, #nem, #sehirisim{
     opacity: 1;
     transition: ease-out 1s;
+}
+
+.rew{
+    padding: 10px;
+}
+.bff{
+    width: 100%;
+    height: 90dvh;
+}
+.imgg{
+    position: absolute;
+    width: 100%;
+    height: 100dvb;
+    z-index: -99;
+    top: 0%;
 }
