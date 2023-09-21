@@ -54,7 +54,6 @@ let sehirler = [
           console.log("resim bulunamadı");
         }
         
-
       })
       .catch(error => {
         console.error("Hata:", error);
