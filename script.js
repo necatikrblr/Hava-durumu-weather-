@@ -46,7 +46,7 @@ let sehirler = [
           imgg.src = "./img/bulutlu.gif"
 
         }
-        else if (resJson.weather[0].description == "yağmurlu" || resJson.weather[0].description == "hafif yağmur" || resJson.weather[0].description == "kısa süreli hafif yoğunluklu yağmur") {
+        else if (resJson.weather[0].description == "yağmurlu" || resJson.weather[0].description == "hafif yağmur" || resJson.weather[0].description == "kısa süreli hafif yoğunluklu yağmur" || resJson.weather[0].description == "orta şiddetli yağmur" ) {
           img.src = "./img/yagmurlu.jpg"
           imgg.src = "./img/yagmur.gif"
         }
